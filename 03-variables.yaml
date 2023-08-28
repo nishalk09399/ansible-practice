@@ -1,6 +1,10 @@
 - name: variables in ansible 
   hosts: mongodb
+  vars: 
+    COURSE: Devops
+    TRAINER: nishal
+    DURATION: 45HRS
   tasks: 
   - name: print the hello world program
     ansible.builtin.debug:
-      msg: "Hellow there ansible is very simple"
+      msg: "Hellow there ansible is very simple, name of the couse is: "{{COURSE}}" and trainer is: "{{TRAINER}}" duration of the course is to be "{{DURATION}}""
