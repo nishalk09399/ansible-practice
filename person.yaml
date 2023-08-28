@@ -27,10 +27,10 @@ addresses:
 #this is map
 
 address:
-city: hyd
-country: IND
-street: DN colony
-pin code: 517002
+ city: hyd
+ country: IND
+ street: DN colony
+ pin code: 517002
 
 #this is the list  of addresses
 addresses:

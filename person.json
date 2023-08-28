@@ -1,40 +1,40 @@
 {
 
-    "name": "nishal", 
-    "dob": "09-03-1999", 
+"name": "nishal", 
+"dob": "09-03-1999", 
 
-    //this is address map, inside the map everything is keyvalue pair
+//this is address map, inside the map everything is keyvalue pair
 
-    "address":{
+"address":{
 
-        "city": "chittoor",
-        "country": "IND"
-    }
+    "city": "chittoor",
+    "country": "IND"
+}
 
 }
 
 {
-    "name": "nishal", 
-    "dob": "09-03-1999", 
+"name": "nishal", 
+"dob": "09-03-1999", 
 
 //this is list,
 
 "address":[
-    {
-        "city": "chittoor",
-        "country": "IND", 
-        "type": "permanent"
-    }
-
-    {
-        "city": "chittoor",
-        "country": "IND", 
-        "type": "temporary"
-
-    }
-
-
+{
     "city": "chittoor",
-    "country": "IND"
+    "country": "IND", 
+    "type": "permanent"
+}
+
+{
+    "city": "chittoor",
+    "country": "IND", 
+    "type": "temporary"
+
+}
+
+
+"city": "chittoor",
+"country": "IND"
 ]
 }
