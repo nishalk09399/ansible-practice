@@ -1,4 +1,6 @@
-name: ping the node
+
+#playbook is the list of plays, it should always starts with the -
+- name: ping the node
 hosts: mongodb
 
 #this is the list of tasks/modules/collections
