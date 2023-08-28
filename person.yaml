@@ -1,0 +1,44 @@
+name: nishal
+dob: 09-03-1999
+
+#this is map
+
+address:
+city: hyd
+country: IND
+street: DN colony
+pin code: 517002
+
+#this is the list  of addresses
+addresses:
+- type: permanent 
+  city: hyd
+  country: IND
+  pin code: 000001
+-type: temporary
+  city: kurnool
+  country: IND
+  pincode: 000002
+
+#this is for 2nd person ramesh 
+- name: ramesh
+  dob: 09-03-1999
+
+#this is map
+
+address:
+city: hyd
+country: IND
+street: DN colony
+pin code: 517002
+
+#this is the list  of addresses
+addresses:
+- type: permanent 
+city: hyd
+country: IND
+pin code: 000001
+-type: temporary
+city: kurnool
+country: IND
+pincode: 000002

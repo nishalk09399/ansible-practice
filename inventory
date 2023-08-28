@@ -1,0 +1,40 @@
+#date - 28-08-2023 ansible day-2
+
+#ungrouped hosts
+192.168.2.1
+172.35.63.96
+172.99.98.36
+658.236.56.36
+
+
+
+#greouped hosts
+
+[mongodb]
+roboshop-us-dev-db-mongodb-01.nishaldevops.online
+
+[mysql]
+roboshop-us-dev-db-mysql-01.nishaldevops.online
+roboshop-ind-dev-db-mysql-02.nishaldevops.online
+
+
+[cart]
+roboshop-us-app-prod-cart-01.nishaldevops.online
+roboshop-us-app-prod-cart-02.nishaldevops.online
+roboshop-us-app-prod-cart-03.nishaldevops.online
+roboshop-us-app-prod-cart-04.nishaldevops.online
+
+[user]
+roboshop-us-app-prod-user-01.nishaldevops.online
+roboshop-ind-app-prod-user-02.nishaldevops.online
+roboshop-ind-app-prod-user-03.nishaldevops.online
+roboshop-ind-app-prod-user-04.nishaldevops.online
+
+
+[db:children]
+mongodb
+mysql
+
+[app:children]
+cart
+user

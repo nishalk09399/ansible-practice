@@ -1,0 +1,14 @@
+<person>
+	<Name>Nishal k </Name>
+	<DOB>09-03-1999 </DOB>
+	<Address>
+		<permanentaddress>
+			<country>IND </country>
+			<city>chittoor </city>
+		</permanentaddress>
+		<currentaddress>
+			<country>US </country>
+			<city>cali </city>
+		</currentaddress>
+	</Address>
+</person>
