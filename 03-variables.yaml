@@ -11,4 +11,4 @@
 
   - name: print the variables
     ansible.builtin.debug:
-      msg: "Hellow there ansible is very simple, name of the couse is: "{{COURSE}}" and trainer is: "{{TRAINER}}" duration of the course is to be "{{DURATION}}""
+      msg: "Hellow there ansible is very simple, name of the couse is: {{COURSE}} and trainer is: {{TRAINER}} duration of the course is to be {{DURATION}}"
