@@ -4,7 +4,7 @@
   hosts: localhosts
   vars: 
     NAME: Nishal-playlevel
-  vars_file: 
+  vars_files: 
   - variable.yaml
   vars_prompt: 
   - name: NAME
