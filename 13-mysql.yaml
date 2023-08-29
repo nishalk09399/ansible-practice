@@ -1,13 +1,12 @@
-#here we are installing the mysql server in one of the server without logining into the server 
-#playbook is the list of plays, it should always starts with the -
-- name: ping the node
-  hosts: mysql
-
-#this is the list of tasks/modules/collections
-
-  tasks:
-  - name: pinging the server
-  #this is the map
-    ansible.builtin.ping: 
-
-      
+- name: install nginx and run nginx 
+  hosts: mongodb
+  become: yes
+  tasks: 
+  - name: install nginx
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+  - name: start nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started

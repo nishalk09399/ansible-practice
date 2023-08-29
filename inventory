@@ -10,13 +10,13 @@
 
 #greouped hosts
 
-# [mongodb]
-# roboshop-us-dev-db-mongodb-01.nishaldevops.online
+[mongodb]
+roboshop-us-dev-db-mongodb-01.nishaldevops.online
 
-[mongodb:vars]
-MONGO_USERNAME=mongodbadmin
-MONGO_DB=categories
-NAME: Nishal-inverntary
+# [mongodb:vars]
+# MONGO_USERNAME=mongodbadmin
+# MONGO_DB=categories
+# NAME: Nishal-inverntary
 
 
 [mysql]
