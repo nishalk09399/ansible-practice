@@ -1,0 +1,18 @@
+#here in this file we are checking which approach is more fast and presedence with respect to above 8 files
+
+- name: testing variables presedence
+  host: localhosts
+  vars: 
+    NAME: Nishal-playlevel
+  vars_file: 
+  - variable.yaml
+  vars_prompt: 
+  - name: NAME
+    prompt: "Your tainer name"
+    private: false
+
+  tasks: 
+  - name: variable at task level
+    vars: Nishal-tasklevel
+    ansible.builtin.debug: 
+    msg: "Trainer name is {{NAME}}, "
