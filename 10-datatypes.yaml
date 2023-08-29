@@ -12,10 +12,10 @@
     - jira
     - dynatrace
   - ADDRESS: #map
-    street: 4-1726
-    colony: DN colony
-    city: chittoor
-    state: AP
+     street: 4-1726
+     colony: DN colony
+     city: chittoor
+     state: AP
 
   tasks: 
   - name: print number variables
