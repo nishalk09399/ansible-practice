@@ -1,0 +1,13 @@
+- name: here we are doing to prompt the user while he use to enter the user credentials while login
+  hosts: localhost
+  vars_prompt:
+
+  task:
+  - name: username
+    prompt: "What is your username?"
+    private: no
+
+  - name: password
+    prompt: "What is your password?"
+
+
