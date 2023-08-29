@@ -1,16 +1,13 @@
 #here we are installing the mysql server in one of the server without logining into the server 
+#playbook is the list of plays, it should always starts with the -
+- name: ping the node
+  hosts: mysql
 
-- name: install and run the mysql
-  hosts: roboshop-us-dev-db-mysql-01.nishaldevops.online
-  become: yes
-  tasks: 
-  - name: install mysql
-    ansible.builtin.yum:
-      name: mysql
-      state: installed
-  - name: start mysql
-    ansible.builtin.service: 
-      name: mysql
-      state: started
+#this is the list of tasks/modules/collections
+
+  tasks:
+  - name: pinging the server
+  #this is the map
+    ansible.builtin.ping: 
 
       
