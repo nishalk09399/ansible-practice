@@ -1,10 +1,12 @@
 - name: variables from files
   hosts: localhost #managing the ansible server itself
-
   vars_files:             #default syntax from ansible to refer the variables files
   - variables.yaml        #it is refering to one existing yaml file and taking the values from there
- tasks: 
- - name: printing variables by taking the reference from the variables yaml file
-   ansible. builtin.debug: 
-     msg: " we are learning {{COURSE}}, from {{NAME}}, his age is {{AGE}}"
+  tasks: 
+  - name: printing variables by taking the reference from the variables yaml file
+    ansible. builtin.debug: 
+      msg: " we are learning {{COURSE}}, from {{NAME}}, his age is {{AGE}}"
+
+
+      
 
