@@ -4,9 +4,9 @@
   - variables.yaml        #it is refering to one existing yaml file and taking the values from there
   tasks: 
   - name: printing variables by taking the reference from the variables yaml file
-    ansible. builtin.debug: 
+    ansible.builtin.debug: 
       msg: " we are learning {{COURSE}}, from {{NAME}}, his age is {{AGE}}"
 
 
-      
+
 
