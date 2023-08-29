@@ -8,7 +8,7 @@
     ansible.builtin.yum:
       name: mysql
       state: installed
-  - name: install mysql
+  - name: start mysql
     ansible.builtin.service: 
       name: mysql
       state: started
