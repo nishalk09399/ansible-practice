@@ -1,7 +1,7 @@
 #here in this file we are checking which approach is more fast and presedence with respect to above 8 files
 
 - name: testing variables presedence
-  hosts: localhosts
+  hosts: mongodb
   vars: 
     NAME: Nishal-playlevel
   vars_files: 
