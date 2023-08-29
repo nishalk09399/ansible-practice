@@ -2,11 +2,11 @@
   hosts: localhost
   vars_prompt:
 
-  - name: username
+  - name: USERNAME
     prompt: "What is your username?"
     private: false
 
-  - name: password
+  - name: PASSWORD
     prompt: "What is your password?"
     private: true #true is we are hiding the password for confidential
 
