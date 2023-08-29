@@ -13,6 +13,11 @@
 [mongodb]
 roboshop-us-dev-db-mongodb-01.nishaldevops.online
 
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
+
+
 [mysql]
 roboshop-us-dev-db-mysql-01.nishaldevops.online
 roboshop-ind-dev-db-mysql-02.nishaldevops.online

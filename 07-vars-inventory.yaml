@@ -1,0 +1,10 @@
+#we can also keeep variables in the inventory file and declare the variables here itself it should work
+
+- name: we can also declares the variables in inventory file and use here. 
+  hosts: mongodb
+  tasks: 
+
+  - name: printmongodb username
+    ansible.builtin.debug: 
+      msg: "username  is: {{MONGO_USERNAME}}, the categerois are: {{MONGO_DB}}"
+
