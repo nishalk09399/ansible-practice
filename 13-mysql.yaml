@@ -1,6 +1,6 @@
 #here we are installing the mysql server in one of the server without logining into the server 
 
-- name: install and run the mysql on node1
+- name: install and run the mysql
   hosts: roboshop-us-dev-db-mysql-01.nishaldevops.online
   become: yes
   tasks: 
@@ -8,7 +8,7 @@
     ansible.builtin.yum:
       name: mysql
       state: installed
-  - name: start mysql
+  - name: install mysql
     ansible.builtin.service: 
       name: mysql
       state: started
