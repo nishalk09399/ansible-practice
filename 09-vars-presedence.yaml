@@ -17,3 +17,13 @@
       NAME:  Nishal-tasklevel
     ansible.builtin.debug: 
       msg: "Trainer name is {{NAME}}"
+
+
+      #first prefernece is command line variables
+      #second is tasklevel
+      #third var_files
+      #fourth prompt
+      #fifth is playlevel
+      #sixth inventory
+
+      
