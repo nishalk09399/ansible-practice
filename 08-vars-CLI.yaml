@@ -4,9 +4,9 @@
   hosts: localhost
   tasks: 
   - name: print variables from the command lines
-    ansible.buildtin.debug: 
+    ansible.builtin.debug: 
       msg: "The value of the name is {{NAME}}"  #here the course variable is not declared in anywhere we need to pass the course variable through the CLI 
 
-      
+
   
 
