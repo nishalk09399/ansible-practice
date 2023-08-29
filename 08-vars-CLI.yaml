@@ -1,0 +1,12 @@
+# we can able to run the file through the command line we can directly pass the command line in server. 
+
+- name: variables from the CLI (commmand line)
+  hosts: localhost
+  tasks: 
+  - name: print variables from the command lines
+    ansible.buildtin.debug: 
+      msg: "The value of the name is {{NAME}}"  #here the course variable is not declared in anywhere we need to pass the course variable through the CLI 
+
+      
+  
+
