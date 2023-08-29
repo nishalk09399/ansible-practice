@@ -13,6 +13,7 @@
 
   tasks: 
   - name: variable at task level
-    vars: Nishal-tasklevel
+    vars:
+      NAME:  Nishal-tasklevel
     ansible.builtin.debug: 
-    msg: "Trainer name is {{NAME}}, "
+      msg: "Trainer name is {{NAME}}"
