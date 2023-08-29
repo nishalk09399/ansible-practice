@@ -1,0 +1,9 @@
+- name: simple condition 
+  hosts: localhost
+  vars: 
+    NAME: AWS
+  tasks: 
+  - name: run this script when the name is aws
+    ansible.builtin.debug
+      msg: "Hellow {{NAME}}"
+    when: NAME == "AWS"
