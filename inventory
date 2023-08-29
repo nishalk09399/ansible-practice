@@ -21,7 +21,7 @@ NAME: Nishal-inverntary
 
 [mysql]
 roboshop-us-dev-db-mysql-01.nishaldevops.online
-roboshop-ind-dev-db-mysql-02.nishaldevops.online
+
 
 
 [cart]
