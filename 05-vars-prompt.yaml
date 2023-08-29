@@ -2,12 +2,16 @@
   hosts: localhost
   vars_prompt:
 
-  task:
   - name: username
     prompt: "What is your username?"
-    private: no
+    private: false
 
   - name: password
     prompt: "What is your password?"
+    private: true #true is we are hiding the password for confidential
 
+  tasks:
+  - name : print username and password variables
+    ansible.builtin.debug:
+      msg: "username: {{USERNAME}}, password: {{PASSWORD}}" 
 
