@@ -2,9 +2,9 @@
   hosts: localhost #no need to give username and password through the ansible command line
   tasks: 
 
-    -name: print the name
-     ansible.builtin.debug: 
-      msg: "Hello: {{item}}"
+    - name: print the name
+      ansible.builtin.debug: 
+        msg: "Hello: {{item}}"
 
     loop:
     - siva             #ths is the list
