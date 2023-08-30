@@ -23,7 +23,13 @@
     become: yes # we are taking sudo access to create the user
     ansible.builtin.user: 
 
+     
+  - when: out.rc!= 0
+    name: create a roboshop user
+    become: yes
+    ansible.builtin.user: 
       name: roboshop
-    when: output.rc != 0 #if this expression is true then only this module will run 
+      
+       #if this expression is true then only this module will run 
 
     
