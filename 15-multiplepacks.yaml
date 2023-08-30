@@ -8,11 +8,11 @@
       name: "{{item}}"
       state: installed
     
-    loop: 
+    loop: #list of strings
     - nginx
     - postfix
     - mailx
-    
+
 
 
     
