@@ -9,7 +9,7 @@ HOSTED_ZONE_ID=Z07869251AQBK6AKJKM03
 
 # if mysql or mongodb instance_type should be t3.medium , for all others it is t2.micro
 
-for i in $[@]
+for i in $@
 do  
     if [[ $i == "mongodb" || $i == "mysql" ]]
     then
