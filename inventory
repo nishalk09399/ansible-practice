@@ -11,7 +11,7 @@
 #greouped hosts
 
 [mongodb]
-roboshop-us-dev-db-mongodb-01.nishaldevops.online
+172.31.36.40
 
 # [mongodb:vars]
 # MONGO_USERNAME=mongodbadmin
