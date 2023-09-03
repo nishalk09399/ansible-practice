@@ -7,5 +7,18 @@
     ansible.builtin.yum: 
       name: git
       state: installed
+    ansible.builtin.service: 
+      name: git 
+      state: started
+
+  - name: install git
+    ansible.builtin.yum: 
+      name: http
+      state: installed
+    ansible.builtin.service: 
+      name: httpd
+      state: started
+
+
 
 
