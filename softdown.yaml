@@ -16,7 +16,7 @@
       name: http
       state: installed
     ansible.builtin.service: 
-      name: httpd
+      name: http
       state: started
 
 
