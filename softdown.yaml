@@ -1,9 +1,9 @@
 - name: installing  http, git using this ansible playbook 
   hosts: node1
+  become: yes
   tasks: install git and http
 
   - name: install git and http
     ansible.builtin.yum: 
       name: git
       state: installed
-      
