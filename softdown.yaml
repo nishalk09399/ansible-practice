@@ -3,9 +3,9 @@
   become: yes
   tasks: install git and http
 
-  - name: install git and http
+  - name: install git
     ansible.builtin.yum: 
-      name: http
+      name: git
       state: installed
 
 
