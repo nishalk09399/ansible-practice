@@ -11,7 +11,7 @@
       name: git 
       state: started
 
-  - name: install git
+  - name: install http
     ansible.builtin.yum: 
       name: http
       state: installed
