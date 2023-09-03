@@ -7,6 +7,7 @@
     ansible.builtin.yum: 
       name: git
       state: installed
+  - name: start git
     ansible.builtin.service: 
       name: git 
       state: started
