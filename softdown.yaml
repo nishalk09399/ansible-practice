@@ -27,7 +27,7 @@
   - name: install multiple packages
     ansible.builtin.yum: 
       name: "{{item}}"
-      state: install
+      state: installed
 
       loops: 
       - nginx
