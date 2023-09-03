@@ -32,7 +32,7 @@
     loop: 
     - nginx
     - tomcat 
-    - apache
+    - apache2
 
 
 
