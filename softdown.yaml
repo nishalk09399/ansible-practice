@@ -3,23 +3,38 @@
   become: yes
   tasks: 
 
-  - name: install git
-    ansible.builtin.yum: 
-      name: git
-      state: installed
-  # - name: start git
+  # - name: install git
+  #   ansible.builtin.yum: 
+  #     name: git
+  #     state: installed
+  # # - name: start git
+  # #   ansible.builtin.service: 
+  # #     name: git 
+  # #     state: started
+
+  # - name: install httpd
+  #   ansible.builtin.yum: 
+  #     name: httpd
+  #     state: installed
+  # - name: start httpd
   #   ansible.builtin.service: 
-  #     name: git 
+  #     name: httpd
   #     state: started
 
-  - name: install httpd
+
+    #----------------------------------------------------------------by using loops------------------------------
+
+  - name: install multiple packages
     ansible.builtin.yum: 
-      name: httpd
-      state: installed
-  - name: start httpd
-    ansible.builtin.service: 
-      name: httpd
-      state: started
+      name: {{item}}
+      state: install
+
+      loops: 
+      - nginx
+      - tomcat 
+      - apache
+
+
 
 
 
