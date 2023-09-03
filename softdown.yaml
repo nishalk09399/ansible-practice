@@ -29,7 +29,7 @@
       name: "{{item}}"
       state: installed
 
-    loops: 
+    loop: 
     - nginx
     - tomcat 
     - apache
