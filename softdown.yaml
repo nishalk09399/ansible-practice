@@ -11,13 +11,13 @@
       name: git 
       state: started
 
-  - name: install http
-    ansible.builtin.yum: 
-      name: http
-      state: installed
-    ansible.builtin.service: 
-      name: http
-      state: started
+  # - name: install http
+  #   ansible.builtin.yum: 
+  #     name: http
+  #     state: installed
+  #   ansible.builtin.service: 
+  #     name: http
+  #     state: started
 
 
 
